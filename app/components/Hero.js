@@ -8,9 +8,9 @@ export default function Hero() {
     <section className="w-full bg-white dark:bg-gray-950">
 
       {/* Fullscreen Hero Image with Overlay & Heading */}
-      <div className="relative h-[90vh] w-full">
+      <div className="relative h-[85vh] w-full">
         <Image
-          src="/church.jpg" // Replace with your image path
+          src="/church.jpg"
           alt="Expectation Ministries"
           layout="fill"
           objectFit="cover"
@@ -19,12 +19,12 @@ export default function Hero() {
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent z-10" />
 
-        <div className="absolute bottom-16 left-8 md:left-16 z-20 text-white max-w-xl space-y-4">
+        <div className="absolute bottom-16 left-6 sm:left-8 md:left-16 z-20 text-white max-w-xl space-y-4">
           <div className="border-l-4 border-rose-500 pl-4">
-            <h1 className="text-3xl md:text-5xl font-bold leading-tight">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight">
               A Place to Encounter God <br />& Be Transformed Forever
             </h1>
-            <p className="text-gray-200 text-sm md:text-base pt-2">
+            <p className="text-gray-200 text-base sm:text-lg md:text-xl pt-2">
               Welcome to Expectation Ministries — where revival begins, and lives are rebuilt.
             </p>
           </div>
@@ -77,11 +77,11 @@ export default function Hero() {
         <div className="grid md:grid-cols-3 gap-6 mt-4 items-start">
           {/* Service Times Card */}
           <Card className="bg-white dark:bg-gray-800 border-rose-100 dark:border-rose-900 shadow-sm">
-            <CardContent className="p-6">
+            <CardContent className="p-4">
               <h3 className="font-semibold text-rose-700 dark:text-rose-300 mb-2">
                 SERVICE TIMES:
               </h3>
-              <p className="text-sm text-gray-700 dark:text-gray-300">
+              <p className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed">
                 SUNDAY WORSHIP: 11:00 AM <br />
                 EVENING PRAYERS: DAY AND TIME
               </p>
@@ -90,18 +90,18 @@ export default function Hero() {
 
           {/* Address Card */}
           <Card className="bg-white dark:bg-gray-800 border-rose-100 dark:border-rose-900 shadow-sm">
-            <CardContent className="p-6">
+            <CardContent className="p-4">
               <h3 className="font-semibold text-rose-700 dark:text-rose-300 mb-2">
                 ADDRESS:
               </h3>
-              <p className="text-sm text-gray-700 dark:text-gray-300">
+              <p className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed">
                 LÜSSUMER STRASSE 105, <br />
                 28779, BREMEN GERMANY
               </p>
             </CardContent>
           </Card>
 
-          {/* Google Map Card (stretches vertically) */}
+          {/* Google Map Card */}
           <Card className="overflow-hidden shadow-sm border-rose-100 dark:border-rose-900 h-full">
             <CardContent className="p-0 h-full">
               <iframe
