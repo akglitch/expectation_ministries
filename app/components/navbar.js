@@ -17,6 +17,7 @@ import {
   SheetHeader,
   SheetTitle,
 } from "@/components/ui/sheet"
+import Image from "next/image"
 
 export default function Nav() {
   const pathname = usePathname()
@@ -37,7 +38,14 @@ export default function Nav() {
       <div className="container mx-auto flex h-16 max-w-6xl items-center justify-between px-4 md:px-6">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2" prefetch={false}>
-          <h5 className="text-lg font-semibold">Expectation Ministries</h5>
+           <Image
+    src="/expectation-logo.png"
+    alt="Expectation Ministries Logo"
+    width={90} // Adjust based on your design
+    height={90}
+    className="object-contain"
+    priority
+  />
           <span className="sr-only">Home</span>
         </Link>
 
@@ -82,7 +90,14 @@ export default function Nav() {
             </SheetTrigger>
             <SheetContent side="left" className="md:hidden">
               <SheetHeader>
-                <SheetTitle>Expectation Ministries</SheetTitle>
+                <SheetTitle> <Image
+    src="/expectation-logo.png"
+    alt="Expectation Ministries Logo"
+    width={90} // Adjust based on your design
+    height={90}
+    className="object-contain"
+    priority
+  /></SheetTitle>
               </SheetHeader>
               <div className="grid gap-4 p-4">
                 {navItems.map(({ label, href }) => (
